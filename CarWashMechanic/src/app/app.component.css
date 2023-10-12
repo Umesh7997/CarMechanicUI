@@ -1,0 +1,41 @@
+.example-spacer {
+    flex: 1 1 auto;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:white;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: rgb(193, 78, 78);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    border-right:1px solid silver;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+  }
+  
+  li a:hover:not(.active) {
+    background-color:white;
+  }
+.register {
+   text-align: center;
+   padding-top:23px;
+  }
+  .register a{
+   color: #e05959;
+   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   font-weight: bold;
+  }
+.search{
+    padding-right: 20px;
+    width:70px
+}
