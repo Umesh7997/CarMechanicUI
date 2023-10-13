@@ -8,10 +8,14 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { CarouselComponent } from './price-comparison/price-comparison.component';
+import { PriceListComponent } from './price-list/price-list.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    CarouselComponent,
+    PriceListComponent
   ],
   imports: [
     BrowserModule,
