@@ -1,0 +1,22 @@
+.register {
+    height:65px;
+    display:flex;
+    align-items:center;
+    justify-content: center;
+   }
+   .lines{
+     display:grid;
+     grid-template-columns: repeat(3, 1fr);
+     align-items: center;
+     column-gap: 1.6rem;
+     color:#e05959;
+     text-decoration: none;
+   }
+ .lines::after, .lines::before{
+   content:'';
+   height:2px;
+   background-color: #e05959;
+   display:block
+   
+ }
+ 

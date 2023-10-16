@@ -1,0 +1,27 @@
+.content {
+    padding-top: 10px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+mat-form-field {
+    width: 50%;
+}
+
+.title {
+    background-color: #e05959;
+    color: white;
+    border-radius: 20px;
+    font-size: 20px;
+}
+
+.actions {
+    padding: 0px 25px 20px;
+}
+
+.actions button {
+    flex: 1;
+}

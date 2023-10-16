@@ -1,0 +1,50 @@
+<div mat-dialog-title align="center">
+    <h1 class="title">Register Here !!</h1>
+</div>
+<form [formGroup]="empForm" (ngSubmit)="onSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>First Name</mat-label>
+                <input matInput type="text" placeholder="Enter Your First Name" formControlName="firstName">
+                <mat-hint style="color:#e05959;">
+                    *first name is required</mat-hint>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Last Name</mat-label>
+                <input matInput type="text" placeholder="Enter Your Last Name" formControlName="lastName">
+                <mat-hint style="color:#e05959;" >
+                    *last name is required</mat-hint>
+            </mat-form-field>
+        </div>
+        <div class="row">
+            <mat-radio-group aria-label="Select Your Gender" formControlName="gender">
+                <mat-label><b>Gender</b></mat-label>
+                <mat-radio-button value="male">Male</mat-radio-button>
+                <mat-radio-button value="female">Female</mat-radio-button>
+                <mat-radio-button value="others">Others</mat-radio-button>
+            </mat-radio-group>
+            <mat-hint style="color:#e05959;">
+                *gender is required</mat-hint>
+        </div>&nbsp;
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>example@gmail.com</mat-label>
+                <input matInput type="text" placeholder="Enter Your Email id" formControlName="email">
+                <mat-hint style="color:#e05959;">
+                    *email id is required</mat-hint>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>+91 | Mobile Number</mat-label>
+                <input matInput type="number" placeholder="Enter Mobile Number" formControlName="mobileNumber">
+                <mat-hint style="color:#e05959;">
+                    *mobile number is required</mat-hint>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <div mat-dialog-actions class="actions">
+        <button mat-raised-button>Cancel</button>
+        <button mat-raised-button style="background-color:#e05959;color:white" type="submit">Save</button>
+    </div>
+</form>
