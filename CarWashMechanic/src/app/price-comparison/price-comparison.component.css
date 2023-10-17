@@ -1,0 +1,8 @@
+.card{
+    box-shadow: 5px 5px 1px silver;
+    min-height: 200px;
+    min-width: 100%;
+}
+.row{
+    text-align: center;
+}
