@@ -5,6 +5,7 @@
 .row {
     display: flex;
     justify-content: space-between;
+    height: 60px;
 }
 
 mat-form-field {
@@ -24,4 +25,8 @@ mat-form-field {
 
 .actions button {
     flex: 1;
+}
+.input{
+    height: 10px;
+    width:100%;
 }
