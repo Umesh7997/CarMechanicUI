@@ -30,3 +30,10 @@ mat-form-field {
     height: 10px;
     width:100%;
 }
+
+::ng-deep .color-snackbar{
+    border-radius: 5px;
+    outline-offset: 2px;
+    --mdc-snackbar-container-color:#e05959;
+    --mdc-snackbar-supporting-text-color:white;
+ }
