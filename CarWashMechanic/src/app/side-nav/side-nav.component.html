@@ -1,0 +1,32 @@
+<mat-toolbar style="background-color : white;">
+    <button (click)="drawer.toggle()" mat-icon-button><mat-icon>menu</mat-icon></button>
+    <img src="../assets/carloho-removebg-preview.png" width="50" height="50">&nbsp;
+    <span style="color:slategray;text-decoration:none">CarMechanic</span>
+    <span class="example-spacer"></span>
+    <mat-icon style="color:#e05959" aria-hidden="false" aria-label="Example phone icon"
+        fontIcon="local_phone"></mat-icon>&nbsp;
+    <a href="tel:+917997064625" style="color:slategray;text-decoration:none">7997064625</a>
+</mat-toolbar>
+
+<mat-drawer-container autosize>
+
+    <mat-drawer #drawer opened="false" mode="side">
+        <mat-nav-list class="mat-nav">
+            <mat-list-item>
+                <button routerLink="home" mat-button><mat-icon>home</mat-icon>Home</button>
+            </mat-list-item>
+            <mat-list-item>
+                <button routerLink="admin" mat-button><mat-icon>handyman</mat-icon>Services</button>
+            </mat-list-item>
+            <mat-list-item>
+                <button routerLink="home" mat-button><mat-icon>person</mat-icon>Profile</button>
+            </mat-list-item>
+        </mat-nav-list>
+    </mat-drawer>
+
+    <mat-drawer-content>
+        <div style="text-align:center;min-height: 530px;">
+            <router-outlet></router-outlet>
+        </div>
+    </mat-drawer-content>
+</mat-drawer-container>

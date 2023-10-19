@@ -26,6 +26,11 @@ import {MatTabsModule} from '@angular/material/tabs';
 import {MatTableModule} from '@angular/material/table';
 import { MatPaginatorModule} from '@angular/material/paginator';
 import { MatSortModule } from '@angular/material/sort';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatListModule} from '@angular/material/list';
+import {MatCardModule} from '@angular/material/card';
+import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 
 @NgModule({
   declarations: [
@@ -38,6 +43,7 @@ import { MatSortModule } from '@angular/material/sort';
     MainComponent,
     LoginComponent,
     AdminComponent,
+    SideNavComponent,
   ],
   imports: [
     BrowserModule,
@@ -56,7 +62,11 @@ import { MatSortModule } from '@angular/material/sort';
     MatTabsModule,
     MatTableModule,
     MatPaginatorModule,
-    MatSortModule
+    MatSortModule,
+    MatSidenavModule,
+    MatListModule,
+    MatCardModule,
+    MatProgressSpinnerModule
 
   ],
   providers: [],
