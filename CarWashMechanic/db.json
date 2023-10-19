@@ -7,6 +7,123 @@
       "email": "umesh@gmail.com",
       "mobileNumber": 7997064625,
       "id": 1
+    },
+    {
+      "firstName": "umesh",
+      "lastName": "mareboina",
+      "gender": "male",
+      "email": "umesh@gmail.com",
+      "mobileNumber": "7997064625",
+      "password": "Umesh@7997",
+      "id": 2
+    },
+    {
+      "firstName": "yashu",
+      "lastName": "sajjala",
+      "gender": "male",
+      "email": "yashu@gmail.com",
+      "mobileNumber": "9550499713",
+      "password": "Yashu@123",
+      "id": 3
+    },
+    {
+      "firstName": "balaram",
+      "lastName": "machavaram",
+      "gender": "male",
+      "email": "bala@gmail.com",
+      "mobileNumber": "8929092123",
+      "password": "Bala@123",
+      "id": 4
+    },
+    {
+      "firstName": "Umesh",
+      "lastName": "Mareboina",
+      "gender": "male",
+      "email": "mareboina@gmail.com",
+      "mobileNumber": "8928393823",
+      "password": "Mareboin@123",
+      "id": 5
+    },
+    {
+      "firstName": "sunny",
+      "lastName": "mahanth",
+      "gender": "male",
+      "email": "sunny@gmail.com",
+      "mobileNumber": "8932802933",
+      "password": "Sunny@123",
+      "id": 6
+    },
+    {
+      "firstName": "hunny",
+      "lastName": "sumanth",
+      "gender": "male",
+      "email": "hunny@gmail.com",
+      "mobileNumber": "9930932831",
+      "password": "Hunny@123",
+      "id": 7
+    },
+    {
+      "firstName": "Yashu",
+      "lastName": "krupakar",
+      "gender": "male",
+      "email": "Yashu@gmail.com",
+      "mobileNumber": "9093294821",
+      "password": "Yashu@1234",
+      "id": 8
+    },
+    {
+      "firstName": "sameer",
+      "lastName": "shaik",
+      "gender": "male",
+      "email": "sameer@gmail.com",
+      "mobileNumber": "9983832345",
+      "password": "Sameer@123",
+      "id": 9
+    },
+    {
+      "firstName": "hannu",
+      "lastName": "mohammad",
+      "gender": "male",
+      "email": "hannu@gmail.com",
+      "mobileNumber": "8932030948",
+      "password": "Hannu@123",
+      "id": 10
+    },
+    {
+      "firstName": "moulana",
+      "lastName": "mohammad",
+      "gender": "male",
+      "email": "moulana@gmail.com",
+      "mobileNumber": "9902933245",
+      "password": "Moulana@123",
+      "id": 11
+    },
+    {
+      "firstName": "kushi",
+      "lastName": "nukala",
+      "gender": "male",
+      "email": "kushi@gmail.com",
+      "mobileNumber": "9490394294",
+      "password": "Kushil@123",
+      "id": 12
+    },
+    {
+      "firstName": "naresh",
+      "lastName": "nukala",
+      "gender": "male",
+      "email": "naresh@gmail.com",
+      "mobileNumber": "9392830294",
+      "password": "Naresh@123",
+      "id": 13
+    },
+    {
+      "firstName": "jijavarapu",
+      "lastName": "srinivas",
+      "gender": "male",
+      "email": "srinivas@gmail.com",
+      "mobileNumber": "9309090494",
+      "password": "Jija@123",
+      "id": 14
     }
   ]
 }

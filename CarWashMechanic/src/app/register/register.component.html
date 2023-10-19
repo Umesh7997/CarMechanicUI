@@ -7,44 +7,51 @@
             <mat-form-field appearance="outline">
                 <mat-label>First Name</mat-label>
                 <input matInput type="text" placeholder="Enter Your First Name" formControlName="firstName">
-                <mat-hint style="color:#e05959;">
-                    *first name is required</mat-hint>
+                <mat-hint style="color:#e05959;" *ngIf="firstName.errors?.['required'] && (firstName.touched || firstName.dirty)">First Name is Required</mat-hint>
+                <mat-hint style="color:#f80303;" *ngIf="firstName.errors?.['minlength']">First Name is too short</mat-hint>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>Last Name</mat-label>
-                <input matInput type="text" placeholder="Enter Your Last Name" formControlName="lastName">
-                <mat-hint style="color:#e05959;" >
-                    *last name is required</mat-hint>
+                <input matInput type="text" placeholder="Enter Your cd Last Name" formControlName="lastName">
+                <mat-hint style="color:#e05959;" *ngIf="lastName.errors?.['required'] && (lastName.touched || lastName.dirty)">Last Name is Required</mat-hint>
+                <mat-hint style="color:#f80303;" *ngIf="lastName.errors?.['minlength']">Last Name is too short</mat-hint>
             </mat-form-field>
-        </div>
+        </div>&nbsp;
         <div class="row">
-            <mat-radio-group aria-label="Select Your Gender" formControlName="gender">
-                <mat-label><b>Gender</b></mat-label>
+            <mat-label><b>Gender</b>  <mat-hint style="color:#e05959; font-size: 12px;padding-left: 10%;" *ngIf="gender.errors?.['required']">Select gender</mat-hint></mat-label>
+            <mat-radio-group aria-label="Select Your Gender" formControlName="gender" color="primary">
                 <mat-radio-button value="male">Male</mat-radio-button>
                 <mat-radio-button value="female">Female</mat-radio-button>
                 <mat-radio-button value="others">Others</mat-radio-button>
             </mat-radio-group>
-            <mat-hint style="color:#e05959;">
-                *gender is required</mat-hint>
         </div>&nbsp;
         <div class="row">
             <mat-form-field appearance="outline">
                 <mat-label>example@gmail.com</mat-label>
                 <input matInput type="text" placeholder="Enter Your Email id" formControlName="email">
-                <mat-hint style="color:#e05959;">
-                    *email id is required</mat-hint>
+                <mat-hint style="color:#e05959;" *ngIf="email.errors?.['required'] && (email.touched || email.dirty)">Email id is Required</mat-hint>
+                <mat-hint style="color:#f80303;" *ngIf="email.errors?.['email']">Email is Invalid</mat-hint>
             </mat-form-field>
             <mat-form-field appearance="outline">
                 <mat-label>+91 | Mobile Number</mat-label>
-                <input matInput type="number" placeholder="Enter Mobile Number" formControlName="mobileNumber">
-                <mat-hint style="color:#e05959;">
-                    *mobile number is required</mat-hint>
+                <input matInput placeholder="Enter Mobile Number" formControlName="mobileNumber">
+                <mat-hint style="color:#e05959;" *ngIf="mobileNumber.errors?.['required'] &&  (mobileNumber.touched || mobileNumber.dirty)">Please enter 10digit mobile number </mat-hint>
+                <mat-hint style="color:#f80303;" *ngIf="mobileNumber.errors?.['pattern'] && (mobileNumber.touched || mobileNumber.dirty)">Mobile number is Invalid</mat-hint>
             </mat-form-field>
-        </div>
+        </div>&nbsp;
+        <mat-form-field appearance="outline" style="width:100%">
+            <mat-label>Password</mat-label>
+            <input matInput type="password" placeholder="Enter Password" formControlName="password" [type]="showPassword? 'password' : 'text'">
+            <mat-hint style="color:#e05959;" *ngIf="password.errors?.['required'] && (password.touched || password.dirty)">Password is Required</mat-hint>
+            <mat-hint style="color:#f80303;" *ngIf="password.errors?.['pattern']">Password must be a combination of lowercase,uppercase,numbers and at least 6 characters long</mat-hint>
+            <mat-icon matSuffix (click)="togglePasswordVisibility()">
+                {{showPassword?'visibility_off':'visibility'}}
+            </mat-icon>
+        </mat-form-field>
     </div>
 
     <div mat-dialog-actions class="actions">
-        <button mat-raised-button>Cancel</button>
-        <button mat-raised-button style="background-color:#e05959;color:white" type="submit">Save</button>
+        <button mat-raised-button (click)="cancel()">Cancel</button>
+        <button mat-raised-button style="background-color:#e05959;color:white" type="submit" [disabled]="empForm.invalid">Save</button>
     </div>
 </form>

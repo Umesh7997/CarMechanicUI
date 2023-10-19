@@ -1,0 +1,17 @@
+.code-text {
+    text-align: center;
+}
+
+.main-body {
+    padding-top: 20px;
+    padding-bottom: 1%;
+    margin: 0 auto;
+    max-width: 1248px;
+}
+
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled) .mdc-tab-indicator__content--underline{
+    border-color:silver;
+}
+::ng-deep .mat-mdc-tab:not(.mat-mdc-tab-disabled).mdc-tab--active .mdc-tab__text-label{
+    color:black;
+}

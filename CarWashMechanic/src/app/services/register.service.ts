@@ -12,4 +12,8 @@ export class RegisterService {
   addUser(data:any): Observable<any>{
     return this.http.post('http://localhost:3000/registerUsers',data)
   }
+
+  getUser(): Observable<any>{
+    return this.http.get('http://localhost:3000/registerUsers')
+  }
 }

@@ -19,6 +19,13 @@ import {MatInputModule} from '@angular/material/input';
 import {MatRadioModule} from '@angular/material/radio';
 import { ReactiveFormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { LoginComponent } from './login/login.component';
+import {MatSnackBarModule} from '@angular/material/snack-bar';
+import { AdminComponent } from './admin/admin.component';
+import {MatTabsModule} from '@angular/material/tabs';
+import {MatTableModule} from '@angular/material/table';
+import { MatPaginatorModule} from '@angular/material/paginator';
+import { MatSortModule } from '@angular/material/sort';
 
 @NgModule({
   declarations: [
@@ -29,6 +36,8 @@ import { HttpClientModule } from '@angular/common/http';
     NavbarComponent,
     HeaderComponent,
     MainComponent,
+    LoginComponent,
+    AdminComponent,
   ],
   imports: [
     BrowserModule,
@@ -42,7 +51,13 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatRadioModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatSnackBarModule,
+    MatTabsModule,
+    MatTableModule,
+    MatPaginatorModule,
+    MatSortModule
+
   ],
   providers: [],
   bootstrap: [AppComponent]

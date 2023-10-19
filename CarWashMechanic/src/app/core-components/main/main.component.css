@@ -17,6 +17,14 @@
    height:2px;
    background-color: #e05959;
    display:block
-   
+ }
+
+ .main-img{
+  top: 10;
+  left: 0;
+  width: 100%;
+  height:420px;
+  position:relative;
+  z-index: -1;
  }
  
