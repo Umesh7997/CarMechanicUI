@@ -1,0 +1,10 @@
+.example-spacer {
+    flex: 1 1 auto;
+}
+.mat-mdc-unelevated-button:hover{
+    background-color: #e05959;
+    border-radius: 30px;
+    color:white;
+    width: 120px!important;
+    min-width: unset!important;
+}

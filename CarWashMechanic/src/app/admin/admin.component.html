@@ -1,12 +1,11 @@
 <mat-toolbar>
-   <p style="text-align: center;color:#e05959;padding-left:40%">User-Service Orders Details</p>
+   <p style="text-align: center;color:#e05959;padding-left:40%">User & Service Orders Details</p>
 </mat-toolbar>
 <mat-tab-group>
     <mat-tab label="Register User Details">
-
         <div class="main-body">
-            <mat-form-field appearance="outline" style="width:60%;padding-left:400px;">
-                <mat-label >Search User Details</mat-label>
+            <mat-form-field appearance="outline" style="width:30%;padding-left:30px;">
+              <mat-label >Search User Details</mat-label>
                 <input matInput (keyup)="applyFilter($event)"  #input>
                 <mat-icon style="float: right;" matSuffix>search</mat-icon>
               </mat-form-field>
@@ -59,8 +58,8 @@
     <mat-tab label="User Service Orders"> 
     
         <div class="main-body">
-            <mat-form-field appearance="outline" style="width:60%;padding-left:400px;">
-                <mat-label >User Service Orders Details</mat-label>
+            <mat-form-field appearance="outline" style="width:30%;padding-left:30px;">
+                <mat-label >Search Users Service Orders Details</mat-label>
                 <input matInput (keyup)="applyFilter($event)"  #input>
                 <mat-icon style="float: right;" matSuffix>search</mat-icon>
               </mat-form-field>

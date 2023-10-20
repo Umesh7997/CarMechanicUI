@@ -4,6 +4,7 @@ import { RegisterComponent } from './register/register.component';
 import { MainComponent } from './core-components/main/main.component';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
+import { SideNavComponent } from './side-nav/side-nav.component';
 const routes: Routes = [
   {path:'register',component:RegisterComponent},
   {path:'login',component:LoginComponent},
