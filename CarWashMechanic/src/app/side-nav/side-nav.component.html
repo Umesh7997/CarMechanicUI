@@ -13,19 +13,19 @@
     <mat-drawer #drawer opened="false" mode="side">
         <mat-nav-list class="mat-nav">
             <mat-list-item>
-                <button routerLink="home" mat-button><mat-icon>home</mat-icon>Home</button>
+                <button routerLink="home" mat-flat-button><mat-icon>home</mat-icon>Home</button><br>
             </mat-list-item>
             <mat-list-item>
-                <button routerLink="admin" mat-button><mat-icon>handyman</mat-icon>Services</button>
+                <button routerLink="admin" mat-flat-button><mat-icon>handyman</mat-icon>Services</button><br>
             </mat-list-item>
             <mat-list-item>
-                <button routerLink="home" mat-button><mat-icon>person</mat-icon>Profile</button>
+                <button routerLink="home" mat-flat-button><mat-icon>person</mat-icon>Profile</button><br>
             </mat-list-item>
         </mat-nav-list>
     </mat-drawer>
 
     <mat-drawer-content>
-        <div style="text-align:center;min-height: 530px;">
+        <div style="text-align:center;min-height: 730px;">
             <router-outlet></router-outlet>
         </div>
     </mat-drawer-content>

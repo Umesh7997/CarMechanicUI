@@ -27,3 +27,9 @@
   position:relative;
   z-index: -1;
  }
+
+ .main-content{
+  overflow-x: hidden;
+overflow-y: hidden !important;
+height: auto;
+ }
