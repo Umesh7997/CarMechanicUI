@@ -32,6 +32,7 @@ import {MatListModule} from '@angular/material/list';
 import {MatCardModule} from '@angular/material/card';
 import {MatProgressSpinnerModule} from '@angular/material/progress-spinner';
 import {MatProgressBarModule} from '@angular/material/progress-bar';
+import { CarServiceComponent } from './car-service/car-service.component';
 
 @NgModule({
   declarations: [
@@ -45,6 +46,7 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
     LoginComponent,
     AdminComponent,
     SideNavComponent,
+    CarServiceComponent,
   ],
   imports: [
     BrowserModule,

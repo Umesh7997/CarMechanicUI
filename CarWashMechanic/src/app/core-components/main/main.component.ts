@@ -19,12 +19,12 @@ export class MainComponent implements OnInit {
   constructor(private matdialog: MatDialog, private regServ: RegisterService) { }
 
   ngOnInit(): void {
-    this.regServ.getUser().subscribe(resp => {
-      this.chartData = resp;
-      console.log("response",resp)
+    this.regServ.getUser().subscribe(result => {
+      this.chartData = result;
+      console.log("response",result);
       if (this.chartData != null) {
-        for (let i = 0; i = this.chartData.length; i++) {
-          // console.log(this.chartData[i]);
+        for (let i = 0; i = this.chartData.length;) {
+           console.log(this.chartData[i]);
           // this.labelData.push(this.chartData[i].mobileNumber);
           // this.realData.push(this.chartData[i].id);
         }

@@ -5,8 +5,10 @@ import { MainComponent } from './core-components/main/main.component';
 import { LoginComponent } from './login/login.component';
 import { AdminComponent } from './admin/admin.component';
 import { SideNavComponent } from './side-nav/side-nav.component';
+import { CarServiceComponent } from './car-service/car-service.component';
 const routes: Routes = [
   {path:'register',component:RegisterComponent},
+  {path:'services',component:CarServiceComponent},
   {path:'login',component:LoginComponent},
   {path:'admin',component:AdminComponent},
   {path:'home',component:MainComponent},
