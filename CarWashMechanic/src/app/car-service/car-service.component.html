@@ -1,0 +1,19 @@
+<div class="container">
+
+<div class="cards" *ngFor="let service of ServiceList">
+    <mat-card class="example-card">
+        <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{service.title}}</mat-card-title>
+        </mat-card-header>
+        <img mat-crad-image src={{service.image}} alt="service" style="height:250px; width:350px;padding-left: 50px; border-radius: 15px">
+        <mat-card-content>
+           {{service.description}}
+        </mat-card-content>
+        <mat-card-actions>
+            <button mat-stroked-button color="warn" (click)="addCart()">{{service.button}}</button>
+        </mat-card-actions>
+    </mat-card>
+</div>
+
+</div>

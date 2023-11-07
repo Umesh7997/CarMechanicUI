@@ -16,4 +16,8 @@ export class RegisterService {
   getUser(): Observable<any>{
     return this.http.get('http://localhost:3000/registerUsers')
   }
+
+  getServices(): Observable<any>{
+    return this.http.get('http://localhost:3000/services')
+  }
 }

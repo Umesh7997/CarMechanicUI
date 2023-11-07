@@ -143,5 +143,31 @@
       "password": "Meghana@123",
       "id": 16
     }
+  ],
+  "services": [
+    {
+      "title":"Basic Service",
+      "image":"../assets/basicservice.jpg",
+      "description":"1000 Kms or 1Month Warranty   Every 3000 Kms or 3Month (Recommended)",
+      "button":"+ add to cart"
+    },
+    {
+      "title":"Standard Service",
+      "image":"../assets/standard.jpg",
+      "description":"1000 Kms or 1Month Warranty   Every 10,000 Kms or 6Month (Recommended)",
+      "button":"+ add to cart"
+    },
+    {
+      "title":"Comprehensive Service",
+      "image":"../assets/comp.jpg",
+      "description":"1000 Kms or 1Month Warranty   Every 20,000 Kms or 12Month (Recommended)",
+      "button":"+ add to cart"
+    },
+    {
+      "title":"Brake Drums turning",
+      "image":"../assets/brake.jpg",
+      "description":"1Month Warranty Recommended: In Case of Screeching Noise from Brakes",
+      "button":"+ add to cart"
+    }
   ]
 }
