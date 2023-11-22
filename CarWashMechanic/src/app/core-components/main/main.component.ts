@@ -19,18 +19,7 @@ export class MainComponent implements OnInit {
   constructor(private matdialog: MatDialog, private regServ: RegisterService) { }
 
   ngOnInit(): void {
-    this.regServ.getUser().subscribe(result => {
-      this.chartData = result;
-      console.log("response",result);
-      if (this.chartData != null) {
-        for (let i = 0; i = this.chartData.length;) {
-           console.log(this.chartData[i]);
-          // this.labelData.push(this.chartData[i].mobileNumber);
-          // this.realData.push(this.chartData[i].id);
-        }
-        this.renderChart(this.labelData,this.realData,'doughnut','doChart');
-      }
-    });
+    
   }
   openRegister() {
     this.matdialog.open(RegisterComponent, {
